@@ -3,7 +3,7 @@ const minute = document.getElementById("minutes");
 const second = document.getElementById("Seconds");
 const ampm = document.getElementById("ampm");
 
-const updateClock = () => {
+const LiveClock = () => {
     let h = new Date().getHours()
     let m = new Date().getMinutes()
     let s = new Date().getSeconds()
@@ -23,8 +23,8 @@ const updateClock = () => {
     second.innerText = s;
     ampm, (innerText = ampm);
     setTimeout(()=> {
-        updateClock()
+        LiveClock()
     }, 1000)
 }
 
-updateClock();
+LiveClock();
