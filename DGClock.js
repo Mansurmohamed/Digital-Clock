@@ -1,7 +1,7 @@
 const hour = document.getElementById("hour");
 const minute = document.getElementById("minutes");
 const second = document.getElementById("Seconds");
-const ampm = document.getElementById("ampm");
+const TimeOfDay = document.getElementById("ampm");
 
 const LiveClock = () => {
     let h = new Date().getHours()
@@ -21,7 +21,7 @@ const LiveClock = () => {
     hour.innerText = h;
     minute.innerText = m;
     second.innerText = s;
-    ampm, (innerText = ampm);
+    TimeOfDay.innerText = ampm;
     setTimeout(()=> {
         LiveClock()
     }, 1000)
